@@ -25,7 +25,7 @@ function App() {
   }
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>MongoDB client site is running</h1>
       <form onSubmit={submitUser}>
         <input type="text" name="name" placeholder='name' id="" /><br />
         <input type="text" name="email" placeholder='email' id="" /><br />
