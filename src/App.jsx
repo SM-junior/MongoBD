@@ -15,12 +15,15 @@ function App() {
       headers:{
         'content-type':'application/json'
       },
-      body:JSON.stringify(user)
+      body:JSON.stringify(user)  // UI sending this user info to server & server receive it as req.body
     })
     .then(res=>res.json())
     .then(data=>{
-      const newUser=data;
-      console.log(newUser);
+      console.log(data);
+      if(data.insertedId){
+        alert('User is added successfully');
+        form.reset()
+      }
     })
   }
   return (
